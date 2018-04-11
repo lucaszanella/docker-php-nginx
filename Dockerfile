@@ -54,7 +54,7 @@ RUN composer global require hirak/prestissimo
 # Configure nginx
 COPY ./files/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY ./files/nginx/default_server.conf /sites/default.conf
-COPY ./files/www/* /www/
+#COPY ./files/www/* /www/
 
 # Configure PHP-FPM
 COPY ./files/php/php-fpm.conf /etc/php7/php-fpm.conf
